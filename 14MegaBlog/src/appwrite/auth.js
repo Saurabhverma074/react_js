@@ -3,6 +3,10 @@ import conf from '../conf/conf.js'
 import {Client,Account,ID} from "appwrite"
 
 
+console.log("CONF DEBUG 👉", conf);
+
+
+
 export class AuthService {
     client =new Client();
     account ;
