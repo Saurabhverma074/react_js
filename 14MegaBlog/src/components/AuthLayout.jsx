@@ -18,6 +18,7 @@ export default function Protected({children,authentication=true}) {
         navigate("/login")
       }
 
+      
       setLoader(false)
 
     },[authStatus,navigate,authentication]) 
