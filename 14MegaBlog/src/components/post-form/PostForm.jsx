@@ -36,6 +36,7 @@ const submit = async (data) => {
                 navigate(`/post/${dbPost.$id}`);
             }
             
+            
         } else {
             const file = await appwriteService.uploadFile(data.image[0]);
 
