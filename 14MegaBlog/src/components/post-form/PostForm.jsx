@@ -39,7 +39,6 @@ const submit = async (data) => {
         } else {
             const file = await appwriteService.uploadFile(data.image[0]);
 
-            
             if (file) {
                 const fileId = file.$id;
                 data.featuredImage = fileId;
